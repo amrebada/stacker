@@ -1,14 +1,11 @@
 {
-  "name": "@amrebada/stacker",
+  "name": "@amrebada/stacker-cli",
   "version": "1.0.0",
   "description": "stacker to generate Full Software solution code",
   "main": "index.js",
   "bin": {
     "@amrebada/stacker-cli": "bin/stacker",
     "stacker": "bin/stacker"
-  },
-  "publishConfig": {
-    "access": "private"
   },
   "scripts": {
     "patch-release": "npm version patch && npm publish && git push --follow-tags"
