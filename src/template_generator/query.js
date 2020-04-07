@@ -47,7 +47,7 @@ class {{name}}Query {
     ];
   }
 
-  static getNumberOfRecords(){
+  static getNumberOfRecords(): Query{
     return ['SELECT count(*) FROM {{name}};',[]]
   }
 

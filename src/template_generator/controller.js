@@ -83,7 +83,13 @@ export const createControllerFile = async (endpoint) => {
       value: endpoint.fields
         .map(
           (f) =>
-            `${f.name}?: ${f.type.toLowerCase() === "date" ? "Date" : f.type};`
+            `${f.name}?: ${
+              f.type.toLowerCase() === "date"
+                ? "Date"
+                : f.type.toLowerCase() === "file"
+                ? "string"
+                : f.type
+            };`
         )
         .join("\n\t"),
     },
