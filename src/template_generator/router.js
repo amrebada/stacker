@@ -181,11 +181,14 @@ export const modifyRouteIndex = async (endpoint) => {
   if (data.includes(`//${endpoint.name};`)) {
     return false;
   }
-
+  const pattern0 = 'import { Router } from "express";';
   const pattern1 = "const router = Router();";
   const pattern2 = "export default router;";
 
-  const upper1 = data.slice(0, data.indexOf(pattern1));
+  const upper1 = data.slice(
+    data.indexOf(pattern0) + pattern0.length,
+    data.indexOf(pattern1)
+  );
   const upper2 = data.slice(
     data.indexOf(pattern1) + pattern1.length,
     data.indexOf(pattern2)
