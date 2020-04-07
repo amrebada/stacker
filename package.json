@@ -19,6 +19,9 @@
     "generator",
     "rest"
   ],
+  "repository": {
+    "url": "https://github.com/amrebada/stacker.git"
+  },
   "dependencies": {
     "arg": "^4.1.2",
     "chalk": "^3.0.0",
