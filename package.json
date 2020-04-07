@@ -1,6 +1,6 @@
 {
   "name": "@amrebada/stacker-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "stacker to generate Full Software solution code",
   "main": "index.js",
   "bin": {
